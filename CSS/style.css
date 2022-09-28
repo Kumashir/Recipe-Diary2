@@ -1,1 +1,117 @@
 @charset "utf-8";
+/* CSSリセット */
+html, body,
+ul, ol, li,dl,dt,dd,
+h1, h2, h3, h4, h5, h6, p, div {
+box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.wrapper{
+    display: flex;
+    margin-bottom: 70px;
+}
+#mainvisual{
+    width: 50%;
+}
+
+#mainvisual img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+#section{
+    width:50% ;
+    padding: 40px 5% 0 5%;
+}
+#section h1{
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+.section_title{
+    border-bottom: 1px solid #ccc;
+    font-size: 1.25rem;
+    margin-top: 40px;
+    padding-bottom: 5px;
+
+}
+dl{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+dt{
+    width: 85%;
+    border-bottom:1px dotted #ccc ;
+    padding: 5px 0;
+}
+dd{
+    width: 15%;
+    border-bottom:1px dotted #ccc ;
+    text-align: right;
+}
+ol{
+    margin-top: 20px;
+
+    margin-left:15px;
+}
+ol li{
+    border-bottom: 1px dotted #ccc;
+    padding: 5px 0;
+}
+.content{
+    text-align: center;
+    margin-bottom: 130px;
+}
+.content a{
+    text-decoration: none;
+    border:1px solid #000;
+    padding:20px 60px;
+    font-size: 0.875rem;
+}
+footer{
+    text-align: center;
+    margin-bottom: 30px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    margin-left: 20px;
+    font-size: 0.875rem;
+    margin-bottom: 13px;
+}
+footer ul li:first-child{
+    margin-left: 0;
+}
+@media screen and (max-width:835px){
+    .wrapper{
+        flex-direction: column;
+        width: 100%;
+    }
+    #section{
+        width: 100%;
+    }
+    #mainvisual{
+        width: 100%;
+    }
+    
+}
